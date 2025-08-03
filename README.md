@@ -1,10 +1,10 @@
 # Paperboy
 
-A Ruby-based tool that exports and organizes your Readwise documents, creating a personalized newspaper from your reading list.
+A Ruby-based tool that surfaces your [Readwise](https://readwise.io/) [Reader](https://readwise.io/read) documents, creating a personalized newspaper from your reading list.
 
 ## Overview
 
-Paperboy fetches documents from a Readwise account and exports them to local JSON files, organizing them by location (new, later, recent). It then uses Claude AI with MCP (Model Context Protocol) tools to generate a personalized newspaper and email it to Josh. 
+Paperboy fetches [Reader](https://readwise.io/read) documents from a [Readwise](https://readwise.io/) account and exports them to local JSON files, organizing them by location (new, later, recent). It then uses Claude AI with MCP (Model Context Protocol) tools to generate a personalized newspaper and email it to Josh. 
 
 The system is implemented as a [Claude Code slash command](https://docs.anthropic.com/en/docs/claude-code/slash-commands) and uses a [Claude subagent](https://docs.anthropic.com/en/docs/claude-code/sub-agents) to analyze Josh's recent writing through his site's MCP server (see [I Built an MCP Server for My Site](https://www.joshbeckman.org/blog/i-built-an-mcp-server-for-my-site)), ensuring the newspaper content aligns with his current interests and writing themes.
 
