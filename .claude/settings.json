@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/usr/bin/osascript:*)",
+      "Bash(bundle install:*)",
+      "Bash(bundle exec rake:*)",
+      "Bash(find:*)",
+    ],
+    "deny": []
+  }
+}
