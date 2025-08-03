@@ -140,4 +140,4 @@ By default, paperboy emails the generated newspaper to Josh using MCP tools. To 
 
 ## Author
 
-Josh Beckman (@joshbeckman)
+[Josh Beckman](https://www.joshbeckman.org/) ([@joshbeckman](https://github.com/joshbeckman))
