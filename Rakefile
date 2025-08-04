@@ -31,12 +31,14 @@ module ReadwiseExporter
       filename = generate_filename(doc)
       filepath = File.join(output_dir, filename)
       doc_hash = doc.serialize
-      doc_hash.delete(:source_url)
+      doc_hash[:published_at] = Time.at(doc.published_date / 1000).iso8601 if doc.published_date&.is_a?(Integer)
       begin
-        doc_hash[:source_domain] = URI.parse(doc.source_url).host if doc.source_url
+        doc_hash[:domain] = URI.parse(doc.source_url).host if doc.source_url
       rescue URI::InvalidURIError, URI::InvalidComponentError
-        doc_hash[:source_domain] = 'email'
+        doc_hash[:domain] = 'email'
       end
+      fields_to_remove = %i[id created_at updated_at notes html published_date source_url source reading_time reading_progress word_count category parent_id]
+      fields_to_remove.each { |field| doc_hash.delete(field) }
       File.write(filepath, JSON.pretty_generate(doc_hash))
       exported_count += 1
 

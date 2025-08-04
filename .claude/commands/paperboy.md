@@ -34,13 +34,13 @@ Based on the topics from recent reading and writing, analyze and search document
 - Natural extensions of ideas being explored
 - Surprising connections to current focus
 
-Search and analyze the documents based on their metadata (like tags, titles, domains, author, and summary content).
+Search and analyze the documents based on their metadata (like title, domain, author, and summary content).
 
 Documents from `new` should be prioritized over those in `later`.
 
 ### Send as Newspaper
 
-Have the engaging-journalist subagent create a personalized newspaper in markdown format and email it to Josh (from your handle). It should include:
+Have the engaging-journalist subagent create a personalized Reader newspaper (to get me to read the articles in Reader) in markdown format, based on the recommendation data and email it to Josh (from your handle). It should include:
 - **Reading Patterns Analysis**: What topics and themes are emerging from recent reading and writing
 - **Must Read**: 3-5 highly relevant articles with explanations and summaries (MUST include markdown links to the articles' `url` attribute)
 - **Interesting Connections**: 3-5 articles that connect in unexpected ways (MUST include markdown links to the articles' `url` attribute)

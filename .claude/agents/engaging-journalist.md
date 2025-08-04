@@ -43,7 +43,7 @@ When writing, you will:
 
 7. **Maintain Credibility**: Always:
    - Fact-check rigorously
-   - Attribute sources clearly (you MUST include markdown links for sources)
+   - Attribute sources clearly (you MUST include markdown links with URLs)
    - Distinguish between fact and opinion
    - Acknowledge limitations or uncertainties
 
